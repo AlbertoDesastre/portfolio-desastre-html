@@ -1,0 +1,57 @@
+.principal:has(> form) {
+  flex-direction: column; /* esta propiedad de flex hace que todos los hijos se alineen en vertical, como columnas */
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding: 15px;
+  max-width: 500px;
+  height: 250px;
+  border-radius: 5px;
+  background-color: rgba(93, 235, 215, 0.8);
+  text-align: center;
+}
+
+label,
+label p {
+  font-weight: 600;
+}
+
+fieldset {
+  border: none;
+}
+
+input,
+textarea {
+  padding: 2px;
+  border-radius: 5px;
+  border: none;
+}
+
+fieldset:nth-child(2),
+textarea {
+  width: 100%;
+}
+
+label:has(> #file) {
+  align-self: flex-start; /* cuando un elemento tiene un padre que es flexible, puede auto-alinearse al principio, centro o final de dicho contenedor */
+  background-color: whitesmoke;
+  padding: 5px;
+  border-radius: 5px;
+}
+#file {
+  display: none;
+}
+
+div > * {
+  margin: 0px 20px;
+}
+.boton-alternativo {
+  border: 2px solid black;
+  border-radius: 3px;
+  width: 70px;
+}

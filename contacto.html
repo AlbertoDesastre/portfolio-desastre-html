@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/contacto.css" />
   </head>
   <body>
     <header>
@@ -17,7 +18,35 @@
       </nav>
     </header>
 
-    <section class="principal"></section>
+    <section class="principal">
+      <h2>Estoy aquí para ti.</h2>
+
+      <form method="post">
+        <fieldset>
+          <label>Nombre: <input type="text" name="nombre" required /></label>
+          <label
+            >Apellido: <input type="text" name="apellido" required
+          /></label>
+        </fieldset>
+
+        <fieldset>
+          <p><strong>Mensaje</strong></p>
+          <label><textarea name="mensaje" rows="4" required></textarea></label>
+        </fieldset>
+
+        <div>
+          <label
+            >Adjuntar archivo<input id="file" type="file" name="adjunto"
+          /></label>
+
+          <input
+            class="boton-alternativo submit"
+            type="submit"
+            value="Enviar"
+          />
+        </div>
+      </form>
+    </section>
 
     <footer>
       <p>
