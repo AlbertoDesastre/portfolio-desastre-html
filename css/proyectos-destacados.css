@@ -1,0 +1,68 @@
+section:has(.proyectos-destacados) {
+  /* este selector es muy especial, porque es una forma de seleccionar el padre de un elemento que contiene un hijo X */
+  width: 90%;
+  display: block;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 32px;
+}
+
+.proyectos-destacados {
+  display: flex;
+  flex-wrap: wrap; /* propiedad para el display flex, le decimos que si el hijo va a exceder el tamaño de su contenedor, siga debajo */
+  justify-content: center; /* le digo que el contenido me lo centre */
+  gap: 10px;
+}
+
+.proyectos-destacados img {
+  width: 350px;
+  height: 176px;
+}
+
+.proyectos-destacados li {
+  padding: 5px;
+}
+
+.proyectos-destacados li article {
+  background-color: rgb(93, 235, 215, 0.9);
+  max-width: 400px;
+  height: 450px;
+}
+
+.proyectos-destacados li article > * {
+  text-align: center;
+  margin: 15px 0px;
+}
+
+/* 
+Esto fue una segunda opción que barajé para centrar las descripciones de 
+proyectos, independientemente de cómo de largo era el párrafo. Como era necesario
+hacer un display grid para poner el botón siempre al final, no quise hacerlo
+para este proyecto.
+
+Desactiva el CSS anterior a este y varía los tamaños de los párrafos para ver lo que vi yo
+
+.proyectos-destacados article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.proyectos-destacados article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+ */
+
+.proyectos-destacados h3 {
+  font-size: 24px;
+}
+
+.boton-default:hover {
+  background-color: #c5ff95;
+  color: #1679ab;
+  transition: 0.7s;
+}
