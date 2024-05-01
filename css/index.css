@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+25&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-image: url("../img/fondo-blanco.jpeg"); /*  Imagen de rawpixel.com en Freepik */
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+/* Estilos generales */
+header p,
+nav,
+footer li,
+footer p,
+footer ul {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: #074173;
+  font-weight: 600;
+}
+
+.boton-default,
+.boton-alternativo {
+  background-color: #1679ab;
+  color: #c5ff95;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 7px;
+}
+
+.boton-default:hover,
+.boton-alternativo:hover {
+  background-color: #c5ff95;
+  color: #1679ab;
+  transition: 0.7s;
+}
+
+.boton-alternativo {
+  background-color: #c5ff95;
+  color: #1679ab;
+}
+
+.boton-alternativo:hover {
+  background-color: #1679ab;
+  color: #c5ff95;
+  transition: 0.5s;
+}
+
+/* Header y NAV */
+header {
+  display: flex;
+  /* display flex permite varias cosas, entre ellas, cuando aplicas a un contenedor display flex haces que sus hijos se alineen horizontalmente por defecto
+  además, puedes alinear/justificar sus hijos a tu antojo. En este caso le estoy diciendo que me ponga cada hijo en una punta del contenedor. */
+  justify-content: space-between;
+  margin: 10px 30px;
+}
+
+header a {
+  margin: 0px 5px;
+}
+
+header a:hover {
+  position: relative;
+  padding: 4px;
+  transition: 0.2s;
+  border-bottom: 3px solid #5debd7;
+}
+
+/* Seccion principal */
+.principal {
+  width: 60%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  gap: 1rem; /* Este gap o espacio entre hijos se puede aplicar gracias a que el contenedor tiene display flex */
+}
+
+.principal article {
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: rgb(93, 235, 215, 0.7);
+}
+
+.principal .boton-default {
+  background-color: #074173;
+  color: white;
+}
+
+.principal p {
+  color: #074173;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.principal .boton-alternativo {
+  padding: 6px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.principal img {
+  width: 350px;
+  border-radius: 15px;
+}
+
+/* Footer y RRSS */
+footer,
+footer a {
+  text-decoration: none;
+  /*   background-color: #074173;
+  color: white; */
+  color: white;
+}
+
+footer {
+  margin-top: 30px;
+  display: flex;
+  background-color: rgb(7, 65, 115, 0.8);
+
+  justify-content: space-around;
+}
+
+footer p {
+  justify-self: center;
+  align-self: center;
+}
+
+footer img {
+  width: 25px;
+  height: 25px;
+}
+
+.rrss li {
+  padding: 0px 5px 0px 5px;
+}
